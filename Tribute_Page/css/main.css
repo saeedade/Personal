@@ -1,0 +1,56 @@
+#main{
+justify-self: center;
+border-radius:5px;
+background-color: rgb(230, 230, 230);
+display: grid;
+grid-gap:5px;
+grid-template-columns: 300px 1fr 300px;
+grid-template-rows: 150px 300px 1fr;
+grid-template-areas: 
+'.heade.'
+'.image.'
+'.conte.';
+}
+header{
+    grid-area: heade;
+    text-align: center;
+    align-self: center;
+}
+#image{
+    max-width:100%;
+        height: auto;
+}
+figcaption{
+    text-align: center;
+}
+#img-div{
+    grid-area: image;
+    background-color: rgb(219, 206, 206);
+    display: grid;
+        justify-content: center;
+        align-content: center;
+}
+
+figure{
+    background-color: aqua;
+    display: grid;
+    align-items: center;
+    grid-template-rows: fr ;
+    justify-self:stretc ;
+}
+main{
+    grid-area: conte; 
+    justify-self: center;
+    text-align: justify;
+}
+h2{
+    text-align: center;
+}
+#link{
+    font-size: 20px;
+    
+}
+q{
+    font-style: italic;
+    text-align: center;
+}
